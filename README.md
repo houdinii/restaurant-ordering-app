@@ -1,5 +1,8 @@
 # Scrimba Solo Project - Restaurant Ordering App
 
+### Deployed to:
+https://curious-naiad-f679be.netlify.app/
+
 ## Requirements:
 - Follow the Figma design spec
 - Render the three menu options using JS
