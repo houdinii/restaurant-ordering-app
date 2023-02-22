@@ -5,6 +5,7 @@
     --header-bg:             #F5F5F5;
     --header-text:           #FFFFFF;
     --input-border:          #757575;
+    --input-text:            #000000;
     --button-text:           #FFFFFF;
     --button-bg:             #16DB99;
     --heading-text:          #000000;
@@ -26,6 +27,7 @@
     --header-bg:             #6943FF;
     --header-text:           #FFFFFF;
     --input-border:          #B295FF;
+    --input-text:            #FFFFFF;
     --button-text:           #FFFFFF;
     --button-bg:             #16DB99;
     --heading-text:          #F5F5F5;
@@ -118,6 +120,19 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 /*endregion*/
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 body, p, h1, h2, h3 {
     padding: 0;
@@ -352,7 +367,7 @@ html{
     height: 71px;
     font-size: 16px;
     border: 1px solid var(--placeholder-text);
-    color: var(--header-text);
+    color: var(--input-text);
     padding-left: 30px;
     background-color: transparent;
     border-radius: 6px;
@@ -376,6 +391,24 @@ html{
     /*margin-top: 50px;*/
 }
 
+.btn-pay{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 475px;
+    height: 71px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 6px;
+    overflow: hidden;
+    /*margin-top: 50px;*/
+}
 /* effect-1 styles */
 /* Modified from: https://codepen.io/foxeisen/pen/bqZxLa */
 .effect-1 {
@@ -426,7 +459,7 @@ html{
 
 /* Temporary Turn Display On And Off */
 .checkout-section{
-    /*display: none;*/
+    display: none;
 }
 .order-status-section{
     display: none;
