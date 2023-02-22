@@ -1,11 +1,101 @@
+<!--suppress ALL -->
 <html lang="en">
     <head>
       <title>Restaurant Ordering App</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Smythe&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="index.css">
     </head>
     <body>
-      <p>This is a test of the deploy</p>
+      <div class="container">
+        <header>
+          <div class="banner">
+            <p class="header-text">Jimmy's Diner</p>
+            <p class="header-subtext">The best burgers and pizza in town.</p>
+          </div>
+        </header>
+        <main>
+          <div class="menu">
+            <div class="items">
+              <div class="item">
+                <div class="item-title">Pizza</div>
+                <div class="item-graphic">🍕</div>
+                <div class="item-description">pepperoni, mushroom, mozzarella</div>
+                <div class="item-price">$14</div>
+                <div class="item-add-btn">
+                  <p class="item-add-btn-text">+</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-title">Hamburger</div>
+                <div class="item-graphic">🍔</div>
+                <div class="item-description">beef, cheese, lettuce</div>
+                <div class="item-price">$12</div>
+                <div class="item-add-btn">
+                  <p class="item-add-btn-text">+</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-title">Beer</div>
+                <div class="item-graphic">🍺</div>
+                <div class="item-description">grain, hops, yeast, water</div>
+                <div class="item-price">$12</div>
+                <div class="item-add-btn">
+                  <p class="item-add-btn-text">+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-section">
+            <p class="checkout-title">Your order</p>
+            <div class="checkout-items">
+              <div class="checkout-item">
+                <p class="checkout-item-name">Pizza</p>
+                <p class="remove-item-btn">remove</p>
+                <p class="checkout-item-price">$14</p>
+              </div>
+              <div class="checkout-item">
+                <p class="checkout-item-name">Beer</p>
+                <p class="remove-item-btn">remove</p>
+                <p class="checkout-item-price">$12</p>
+              </div>
+            </div>
+            <div class="checkout-total-section">
+              <p class="checkout-total-heading">Total price:</p>
+              <p class="checkout-total-price">$26</p>
+            </div>
+            <div class="purchase-btn effect-1">
+              <p class="">Complete Order</p>
+            </div>
+          </div>
+          <div class ="order-status-section">
+            <p class="order-status-message">Thanks, James! Your order is on its way!</p>
+          </div>
+          <div class="theme-switch-wrapper">
+            <div class="slider-section"><label class="theme-switch" for="mode-checkbox">
+              <input type="checkbox" id="mode-checkbox"/>
+              <div class="slider round"></div>
+            </label>
+              <p id="dark-mode-label" class="slider-label">Dark Mode!</p>
+            </div>
+
+          </div>
+        </main>
+      </div>
+      <div class="modal-container">
+        <div class="modal">
+          <p class="modal-header">Enter card details</p>
+          <input type="text" class="input-box order-name" placeholder="Enter your name">
+          <input type="text" class="input-box order-card-number" placeholder="Enter card number">
+          <input type="text" class="input-box order-cvv" placeholder="Enter CVV">
+          <div class="pay-btn effect-1">
+            <p class="">Pay</p>
+          </div>
+        </div>
+      </div>
       <script src="index.js"></script>
     </body>
 </html>

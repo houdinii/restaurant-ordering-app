@@ -15,9 +15,29 @@ const menuArray = [
     },
         {
         name: "Beer",
-        ingredients: ["grain, hops, yeast, water"],
+        ingredients: ["grain", "hops", "yeast", "water"],
         price: 12,
         emoji: "🍺",
         id: 2
     }
 ]
+
+/*
+*
+* Fonts:
+* Smyth - Google Font
+*  39 reg head
+*  32 order status message
+*  28 menu item, order text
+*  22.5 subhead
+*  16 menu desc
+*  20 price, order price
+*
+*
+* Verdana - System Font
+*  24 modal header
+*  20 placeholder text
+*  16 button text
+*  12 order remove text
+*
+* */
